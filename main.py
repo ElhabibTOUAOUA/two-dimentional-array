@@ -9,7 +9,6 @@ import hashlib
 #     ]  
 
 def inputMatrixFromUser(rows, cols):
-  # get how many rows and columns from user
   matrix = []
   for i in range(rows):
     matrix.append([])
