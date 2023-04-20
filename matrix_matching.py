@@ -9,7 +9,8 @@ def get_matrix():
 		# Get the matrix
 		matrix = []
 		for i in range(n):
-				row = [int(x) for x in input('Enter row {}: '.format(i + 1)).split()]
+				row = [int(x) for x in input('Enter row {}: '.format(i + 1)).split()[:m]]
+				row += [0] * (m - len(row))  # Pad with zeros if needed
 				matrix.append(row)
 
 		return matrix
